@@ -10,8 +10,10 @@
   <style>
     html, body {
       margin: 0;
+      /* enable smooth scrolling for anchor links */
+      scroll-behavior: smooth;
       /* increase bottom padding so CTA stays sticky longer */
-      padding: 0 0 1px;
+      padding: 0 0 300px;
       background: #fffef5;
       font-family: 'Inter', sans-serif;
       color: #1c1c1c;
@@ -61,7 +63,10 @@
     }
 
     header img.logo {
-      max-width: 800px;
+      width: 80%;          /* scale with viewport */
+      max-width: 420px;    /* on larger screens */
+      height: auto;
+      margin: 0 auto;
     }
 
     header h1 {
