@@ -10,9 +10,7 @@
   <style>
     html, body {
       margin: 0;
-      /* enable smooth scrolling for anchor links */
       scroll-behavior: smooth;
-      /* increase bottom padding so CTA stays sticky longer */
       padding: 0 0 300px;
       background: #fffef5;
       font-family: 'Inter', sans-serif;
@@ -28,7 +26,7 @@
       text-align: center;
       border-bottom-left-radius: 40px;
       border-bottom-right-radius: 40px;
-      padding: 60px 20px 60px;
+      padding: 120px 20px 60px;
       max-width: 960px;
       margin: 0 auto 40px;
       border-radius: 16px;
@@ -50,10 +48,10 @@
     }
 
     .stack-section.cta {
-      /* now positioned via wrapper */
-      position: relative;
-      z-index: 3;
-      margin-bottom: 650px;
+      position: sticky;
+      top: 100px;
+      z-index: 10;
+      margin-bottom: 800px;
       background: #fffdf6;
     }
     .cta-wrapper {
@@ -63,8 +61,8 @@
     }
 
     header img.logo {
-      width: 80%;          /* scale with viewport */
-      max-width: 640px;    /* on larger screens */
+      width: 80%;
+      max-width: 420px;
       height: auto;
       margin: 0 auto;
     }
@@ -142,10 +140,10 @@
 
 <body>
   <header>
-    <img src="ShopOpsLogo.png" alt="ShopOps Logo" class="logo">
+    <img src="https://shopops.app/ShopOpsLogo.png" alt="ShopOps Logo" class="logo">
     <h1>Your Shopify Ops Team—No Learning Curve, Just Results.</h1>
     <p>Delegate your Shopify store's technical and operational tasks with ease. ShopOps is the all-in-one support service and client portal that gives you a white-glove experience, without the guesswork.</p>
-    <a href="#cta" class="btn">Get 5 Free PopCoins</a>
+    <a href="#cta" class="btn">Get 2 Free Tokens</a>
   </header>
 
   <div class="stack-section">
@@ -158,7 +156,7 @@
     <h2>What ShopOps Delivers</h2>
     <ul>
       <li>On-Demand Shopify Support: Send tasks via email, voice memo, chat, or portal—no forms or friction.</li>
-      <li>Token-Based System: Use PopCoins (task credits) instead of billing by the hour.</li>
+      <li>Token-Based System: Use Tokens (task credits) instead of billing by the hour.</li>
       <li>Kanban Task View: Track every task in progress—Triage → Solve → Verify → Complete.</li>
       <li>No Vendor Lock-In: Our app lives inside your store—keep the app even if you cancel ShopOps support.</li>
       <li>Free to Use: The ShopOps app is free to install. You only pay for the PopCoin subscription that powers your task fulfillment.</li>
@@ -169,7 +167,7 @@
   <div class="stack-section">
     <h2>How It Works</h2>
     <ol>
-      <li><strong>Start Free:</strong> Get up to 5 PopCoins to try the service risk-free</li>
+      <li><strong>Start Free:</strong> Get up to 5 Tokens to try the service risk-free</li>
       <li><strong>Submit a Task:</strong> Email, upload, or message us anything you want done in Shopify</li>
       <li><strong>We Handle It:</strong> Our expert team completes the work and keeps you informed</li>
       <li><strong>Track Progress:</strong> Use your portal to see status, token usage, and outcomes</li>
@@ -206,10 +204,10 @@
 
   <div class="stack-section">
     <h2>Pricing</h2>
-    <div class="pricing-tier"><strong>Starter:</strong> $500/month — 20 PopCoins</div>
-    <div class="pricing-tier"><strong>Growth:</strong> $900/month — 40 PopCoins</div>
-    <div class="pricing-tier"><strong>Scale:</strong> $1500/month — 70 PopCoins</div>
-    <p>Add-on PopCoins available. Cancel anytime.</p>
+    <div class="pricing-tier"><strong>Starter:</strong> $600/month — 4 Tokens</div>
+    <div class="pricing-tier"><strong>Growth:</strong> $1200/month — 10 Tokens</div>
+    <div class="pricing-tier"><strong>Scale:</strong> $2400/month — 24 Tokens</div>
+    <p>Add-on Tokens available. Cancel anytime.</p>
   </div>
 
   <div class="stack-section">
@@ -225,28 +223,23 @@
     <h2>Shopify App — Coming Soon</h2>
     <p>We’re building the ShopOps Shopify App to give you seamless access to your Kanban task board, PopCoin usage, and integrated support—right inside your Shopify admin.</p>
     <div style="text-align: center; margin-top: 30px;">
-      <img src="shopify-app-screenshot.png" alt="ShopOps App UI Preview" style="max-width:100%; border-radius:12px; box-shadow:0 8px 20px rgba(0,0,0,0.1);">
+      <img src="https://shopops.app/shopify-app-screenshot.png" alt="ShopOps App UI Preview" style="max-width:100%; border-radius:12px; box-shadow:0 8px 20px rgba(0,0,0,0.1);">
     </div>
   </div>
 
   <div class="cta-wrapper">
-  <div class="stack-section cta" id="cta">
-    <h2>Try ShopOps Free — Get 5 PopCoins Today</h2>
-    <button class="btn" onclick="window.dispatchEvent(new CustomEvent('heyflow-modal-element:open', { detail: { modalId: 'I7__GpbuDm' }}));">Start Now</button>
-    <heyflow-modal-element modal-id="I7__GpbuDm"><heyflow-wrapper flow-id="ONczn56DlynlyKpo0YHq" dynamic-height scroll-up-on-navigation style-config='{"width":"800px","borderRadius":"16px"}' modal-id="I7__GpbuDm"> modal-id="I7__GpbuDm"></heyflow-wrapper></heyflow-modal-element>
-    <p style="margin-top: 30px;">Prefer a quick call first? 
-
-    <!-- Calendly link widget begin -->
-<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
-<script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
-<a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/mountain-media/5-minute-intro-call'});return false;">Schedule a 5 Minute Intro Call</a>
-<!-- Calendly link widget end -->
-    </p>
-    <p style="margin-top: 30px; font-size:0.95rem; color:#555;">Powered by real people. Built for real growth.<br>Your Shopify back office, managed.</p>
-  </div>
-
+    <div class="stack-section cta" id="cta">
+      <h2>Try ShopOps Free — Get 5 Tokens Today</h2>
+      <button class="btn" onclick="window.dispatchEvent(new CustomEvent('heyflow-modal-element:open', { detail: { modalId: 'I7__GpbuDm' }}));">Start Now</button>
+      <p style="margin-top: 20px; font-size:0.95rem; color:#555;">Powered by real people. Built for real growth.<br>Your Shopify back office, managed.</p>
+    </div>
   </div> <!-- end cta-wrapper -->
-<script>
+
+  <heyflow-modal-element modal-id="I7__GpbuDm">
+    <heyflow-wrapper flow-id="ONczn56DlynlyKpo0YHq" dynamic-height scroll-up-on-navigation style-config='{"width":"800px","borderRadius":"16px"}' modal-id="I7__GpbuDm"></heyflow-wrapper>
+  </heyflow-modal-element>
+
+  <script>
     const headerEl = document.querySelector('header');
     const sections = Array.from(document.querySelectorAll('.stack-section'));
     const elems = [headerEl, ...sections];
