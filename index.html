@@ -1,269 +1,227 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ShopOps — Your Shopify Ops Team</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-  <script src="https://assets.prd.heyflow.com/builder/widget/latest/webview.js"></script>
-  <style>
-    html, body {
-      margin: 0;
-      scroll-behavior: smooth;
-      padding: 0 0 300px;
-      background: #fffef5;
-      font-family: 'Inter', sans-serif;
-      color: #1c1c1c;
-    }
-
-    header {
-      position: sticky;
-      top: 0;
-      z-index: 1;
-      background: #ffcc00;
-      color: #000;
-      text-align: center;
-      border-bottom-left-radius: 40px;
-      border-bottom-right-radius: 40px;
-      padding: 120px 20px 60px;
-      max-width: 960px;
-      margin: 0 auto 40px;
-      border-radius: 16px;
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
-      transition: filter 0.2s ease-out, opacity 0.2s ease-out;
-    }
-
-    .stack-section {
-      position: sticky;
-      top: 0;
-      z-index: 2;
-      background: #fffdf6;
-      padding: 60px 20px;
-      max-width: 960px;
-      margin: 0 auto 40px;
-      border-radius: 16px;
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
-      transition: filter 0.2s ease-out, opacity 0.2s ease-out;
-    }
-
-    .stack-section.cta {
-      position: sticky;
-      top: 100px;
-      z-index: 10;
-      margin-bottom: 800px;
-      background: #fffdf6;
-    }
-    .cta-wrapper {
-      position: sticky;
-      top: 200px;
-      z-index: 10;
-    }
-
-    header img.logo {
-      width: 80%;
-      max-width: 420px;
-      height: auto;
-      margin: 0 auto;
-    }
-
-    header h1 {
-      font-size: 2.75rem;
-      margin-bottom: 20px;
-      font-weight: 700;
-    }
-
-    header p {
-      font-size: 1.25rem;
-      opacity: 0.95;
-    }
-
-    .btn {
-      display: inline-block;
-      margin-top: 30px;
-      padding: 14px 28px;
-      background: #000;
-      color: #ffcc00;
-      text-decoration: none;
-      border-radius: 8px;
-      font-weight: 600;
-      font-size: 1rem;
-      transition: background 0.3s;
-    }
-
-    .btn:hover {
-      background: #333;
-      color: #fffcd1;
-    }
-
-    h2 {
-      font-size: 2rem;
-      margin-bottom: 20px;
-      color: #000;
-    }
-
-    h3 {
-      margin-top: 30px;
-      color: #222;
-    }
-
-    ul, ol {
-      padding-left: 20px;
-    }
-
-    ul li, ol li {
-      margin-bottom: 10px;
-      line-height: 1.6;
-    }
-
-    .pricing-tier {
-      background: #fff3bf;
-      padding: 20px;
-      border-radius: 10px;
-      margin-bottom: 20px;
-      font-weight: 600;
-      border-left: 6px solid #ffcc00;
-    }
-
-    .cta {
-      text-align: center;
-      margin-top: 10px;
-    }
-
-    /* Cards after CTA scroll normally underneath */
-    .stack-section.cta ~ .stack-section {
-      position: relative;
-      z-index: 1;
-    }
-  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ShopOps | Shopify Operations, Automation, and Apps</title>
+  <meta name="description" content="ShopOps provides white-glove Shopify operations support, workflow automation, and Shopify apps for growing merchants.">
+  <link rel="canonical" href="https://www.shopops.app/">
+  <meta property="og:title" content="ShopOps | Your Shopify Operations Team">
+  <meta property="og:description" content="Managed Shopify operations, automation, and apps built for growing stores.">
+  <meta property="og:image" content="https://www.shopops.app/ShopOpsLogo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
 </head>
-
 <body>
-  <header>
-    <img src="https://shopops.app/ShopOpsLogo.png" alt="ShopOps Logo" class="logo">
-    <h1>Your Shopify Ops Team—No Learning Curve, Just Results.</h1>
-    <p>Delegate your Shopify store's technical and operational tasks with ease. ShopOps is the all-in-one support service and client portal that gives you a white-glove experience, without the guesswork.</p>
-    <a href="#cta" class="btn">Get 2 Free Tokens</a>
+  <header class="site-header">
+    <nav class="nav" aria-label="Primary navigation">
+      <a class="brand" href="/"><img src="/ShopOpsLogo.png" alt="ShopOps"> <span>ShopOps</span></a>
+      <button class="nav-toggle" type="button" aria-label="Open navigation">Menu</button>
+      <div class="nav-links">
+        <a data-nav href="/apps/">Apps</a>
+        <a data-nav href="/support/">Support</a>
+        <a data-nav href="/faq/">FAQ</a>
+        <a data-nav href="/contact/">Contact</a>
+        <a class="button" href="/contact/">Get Started</a>
+      </div>
+    </nav>
   </header>
 
-  <div class="stack-section">
-    <h2>The Problem</h2>
-    <p>Running a Shopify store means juggling products, promotions, apps, and backend headaches—on top of actually growing your business.</p>
-    <p>Shopify’s support gives you a chat box. We give you a team.</p>
-  </div>
+  <main>
+    <section class="hero">
+      <div class="hero-grid">
+        <div>
+          <p class="eyebrow">Shopify operations infrastructure</p>
+          <h1>Your Shopify Operations Team</h1>
+          <p>White-glove Shopify operations, automation, and apps built for growing stores.</p>
+          <div class="hero-actions">
+            <a class="button" href="/contact/">Get Started</a>
+            <a class="button secondary" href="/apps/">Explore Apps</a>
+          </div>
+          <div class="hero-proof">
+            <span>Managed operations</span>
+            <span>Shopify app development</span>
+            <span>Workflow automation</span>
+          </div>
+        </div>
+        <div class="dashboard reveal" aria-label="ShopOps dashboard mockup">
+          <div class="dashboard-top">
+            <div class="window-dots"><span></span><span></span><span></span></div>
+            <strong>Operations Command Center</strong>
+          </div>
+          <div class="dashboard-grid">
+            <div class="metric"><strong>24</strong><span>Open tasks</span></div>
+            <div class="metric"><strong>98%</strong><span>SLA health</span></div>
+            <div class="metric"><strong>12</strong><span>Inventory alerts</span></div>
+            <div class="metric"><strong>4</strong><span>Apps monitored</span></div>
+            <div class="taskboard-preview">
+              <div class="task-column"><h4>Triage</h4><div class="task-card">Variant import QA<br><span>Assigned today</span></div></div>
+              <div class="task-column"><h4>Solve</h4><div class="task-card">Pre-order rules<br><span>PO connected</span></div></div>
+              <div class="task-column"><h4>Verify</h4><div class="task-card">Theme performance<br><span>Awaiting approval</span></div></div>
+              <div class="task-column"><h4>Complete</h4><div class="task-card">Collection updates<br><span>Shipped</span></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-  <div class="stack-section">
-    <h2>What ShopOps Delivers</h2>
-    <ul>
-      <li>On-Demand Shopify Support: Send tasks via email, voice memo, chat, or portal—no forms or friction.</li>
-      <li>Token-Based System: Use Tokens (task credits) instead of billing by the hour.</li>
-      <li>Kanban Task View: Track every task in progress—Triage → Solve → Verify → Complete.</li>
-      <li>No Vendor Lock-In: Our app lives inside your store—keep the app even if you cancel ShopOps support.</li>
-      <li>Free to Use: The ShopOps app is free to install. You only pay for the Token subscription that powers your task fulfillment.</li>
-      <li>Scalable, White-Glove Service: Start with Shopify support, grow into full digital marketing.</li>
-    </ul>
-  </div>
+    <section class="section">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div>
+            <p class="eyebrow">Managed Shopify services</p>
+            <h2>Start with operations support. Scale into automation, apps, and growth systems.</h2>
+          </div>
+          <p>ShopOps gives Shopify merchants a dependable operational partner for daily store work, technical cleanup, integrations, and repeatable backend processes.</p>
+        </div>
+        <div class="grid three">
+          <article class="card reveal"><span class="tag">Store operations</span><h3>Keep the backend moving</h3><p>Product updates, collection management, merchandising changes, app configuration, and ongoing store maintenance.</p></article>
+          <article class="card reveal"><span class="tag">Workflow automation</span><h3>Reduce manual admin work</h3><p>Turn repeatable Shopify tasks into documented workflows, automations, and app-powered processes.</p></article>
+          <article class="card reveal"><span class="tag">Growth infrastructure</span><h3>Build for scale</h3><p>Improve operational quality across inventory, promotions, performance, reporting, and internal handoffs.</p></article>
+        </div>
+      </div>
+    </section>
 
-  <div class="stack-section">
-    <h2>How It Works</h2>
-    <ol>
-      <li><strong>Start Free:</strong> Get up to 5 Tokens to try the service risk-free</li>
-      <li><strong>Submit a Task:</strong> Email, upload, or message us anything you want done in Shopify</li>
-      <li><strong>We Handle It:</strong> Our expert team completes the work and keeps you informed</li>
-      <li><strong>Track Progress:</strong> Use your portal to see status, token usage, and outcomes</li>
-    </ol>
-  </div>
+    <section class="section dark">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div>
+            <p class="eyebrow">Managed services pricing</p>
+            <h2>Operational support plans for Shopify teams.</h2>
+          </div>
+          <p>Clean monthly support designed for merchants who need expert execution, clearer workflows, and dependable Shopify help.</p>
+        </div>
+        <div class="grid three">
+          <article class="price-card reveal">
+            <span class="tag">Essentials</span>
+            <h3>Foundational support</h3>
+            <div class="price">$499<small>/month</small></div>
+            <p>Ideal for smaller stores that need reliable Shopify operational assistance.</p>
+            <ul class="feature-list">
+              <li>Store updates</li>
+              <li>Product management assistance</li>
+              <li>App configuration assistance</li>
+              <li>Email and ticket support</li>
+            </ul>
+            <a class="button" href="/contact/">Schedule a Discovery Call</a>
+          </article>
+          <article class="price-card reveal">
+            <span class="tag">Growth</span>
+            <h3>Proactive management</h3>
+            <div class="price">$999<small>/month</small></div>
+            <p>For scaling brands that need faster support and operational optimization.</p>
+            <ul class="feature-list">
+              <li>Advanced Shopify support</li>
+              <li>Workflow optimization</li>
+              <li>Operational consulting</li>
+              <li>Faster response times</li>
+            </ul>
+            <a class="button" href="/contact/">Schedule a Discovery Call</a>
+          </article>
+          <article class="price-card reveal">
+            <span class="tag">Enterprise</span>
+            <h3>Dedicated operations</h3>
+            <div class="price">Custom<small> $2999+</small></div>
+            <p>For multi-store and complex teams that need process management and deeper integrations.</p>
+            <ul class="feature-list">
+              <li>Dedicated operational support</li>
+              <li>Custom workflows</li>
+              <li>Multi-store support</li>
+              <li>Strategic operational consulting</li>
+            </ul>
+            <a class="button" href="/contact/">Schedule a Discovery Call</a>
+          </article>
+        </div>
+      </div>
+    </section>
 
-  <div class="stack-section">
-    <h2>What You Can Get Done</h2>
-    <h3>1 Token Tasks:</h3>
-    <ul>
-      <li>Product edits</li>
-      <li>Price updates</li>
-      <li>Navigation tweaks</li>
-    </ul>
-    <h3>2 Token Tasks:</h3>
-    <ul>
-      <li>Bulk imports</li>
-      <li>App installs</li>
-      <li>Collection setups</li>
-    </ul>
-    <h3>3+ Token Tasks:</h3>
-    <ul>
-      <li>Theme customizations</li>
-      <li>API integrations</li>
-      <li>Performance audits</li>
-    </ul>
-    <h3>Advanced:</h3>
-    <ul>
-      <li>Store migrations</li>
-      <li>App troubleshooting</li>
-      <li>Shopify API workflows</li>
-    </ul>
-  </div>
+    <section class="section" id="apps">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div>
+            <p class="eyebrow">ShopOps apps</p>
+            <h2>Apps built from real Shopify operational work.</h2>
+          </div>
+          <p>ShopOps apps are designed around merchant workflows where inventory, merchandising, and support work need to happen with less manual effort.</p>
+        </div>
+        <div class="grid three">
+          <article class="card reveal"><span class="tag">Available Now</span><h3>ShopOps PreOrders</h3><p>Enable intelligent pre-orders using incoming inventory and purchase order data.</p><a class="button secondary" href="/apps/preorders/">Learn More</a></article>
+          <article class="card reveal"><span class="tag">Available Now</span><h3>ShopOps ShowLow</h3><p>Automatically identify and promote low inventory products before they go out of stock.</p><a class="button secondary" href="/apps/showlow/">Learn More</a></article>
+          <article class="card reveal"><span class="tag">Coming Soon</span><h3>ShopOps TaskBoard</h3><p>White-glove Shopify operational management system with Kanban workflows and delegated task management.</p><a class="button secondary" href="/apps/taskboard/">Preview</a></article>
+        </div>
+      </div>
+    </section>
 
-  <div class="stack-section">
-    <h2>Pricing</h2>
-    <div class="pricing-tier"><strong>Starter:</strong> $600/month — 4 Tokens</div>
-    <div class="pricing-tier"><strong>Growth:</strong> $1,200/month — 10 Tokens</div>
-    <div class="pricing-tier"><strong>Scale:</strong> $2,400/month — 24 Tokens</div>
-    <p>Add-on Tokens available. Cancel anytime.</p>
-  </div>
+    <section class="section yellow">
+      <div class="container mockup-band">
+        <div class="reveal">
+          <p class="eyebrow">TaskBoard platform</p>
+          <h2>Operational infrastructure for Shopify merchants.</h2>
+          <p>TaskBoard brings Jira-style visibility to delegated Shopify operations: intake from email, chat, and tickets; internal routing; Kanban progress; and clear operational accountability.</p>
+          <ul class="feature-list">
+            <li>Triage -> Solve -> Verify -> Complete workflow</li>
+            <li>White-glove task management for daily Shopify work</li>
+            <li>Free app install with operational subscriptions</li>
+            <li>Future centralized management platform for apps and services</li>
+          </ul>
+          <div class="section-actions"><a class="button" href="/apps/taskboard/">Preview TaskBoard</a></div>
+        </div>
+        <div class="dashboard reveal">
+          <div class="dashboard-top"><div class="window-dots"><span></span><span></span><span></span></div><strong>TaskBoard</strong></div>
+          <div class="taskboard-preview">
+            <div class="task-column"><h4>Triage</h4><div class="task-card">New promotion request<span>From email</span></div></div>
+            <div class="task-column"><h4>Solve</h4><div class="task-card">App integration QA<span>Ops team</span></div></div>
+            <div class="task-column"><h4>Verify</h4><div class="task-card">Inventory rule check<span>Merchant review</span></div></div>
+            <div class="task-column"><h4>Complete</h4><div class="task-card">Homepage update<span>Logged</span></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-  <div class="stack-section">
-    <h2>Who It’s For</h2>
-    <ul>
-      <li>Shopify merchants who want reliable help with store changes</li>
-      <li>Prefer to delegate instead of DIY</li>
-      <li>Are scaling and need proactive, trusted support</li>
-    </ul>
-  </div>
+    <section class="section">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div><p class="eyebrow">Why ShopOps</p><h2>Apps and services together, built around Shopify operations.</h2></div>
+          <p>ShopOps combines human operational support with tools that make the work visible, repeatable, and easier to scale.</p>
+        </div>
+        <div class="grid three">
+          <article class="card reveal"><h3>No vendor lock-in</h3><p>Use the apps and retain operational clarity even as your support needs evolve.</p></article>
+          <article class="card reveal"><h3>Operational transparency</h3><p>See what is being handled, where work stands, and what needs merchant approval.</p></article>
+          <article class="card reveal"><h3>Real humans</h3><p>Experienced operators handle Shopify work with context, judgment, and communication.</p></article>
+          <article class="card reveal"><h3>Shopify-focused</h3><p>Services and apps are designed for Shopify merchant workflows, not generic tickets.</p></article>
+          <article class="card reveal"><h3>Apps plus services</h3><p>Operational knowledge feeds product development, and the apps make support more scalable.</p></article>
+          <article class="card reveal"><h3>Proactive support</h3><p>Move from reactive fixes to better systems, documented processes, and recurring improvements.</p></article>
+        </div>
+      </div>
+    </section>
 
-  <div class="stack-section">
-    <h2>Shopify App — Coming Soon</h2>
-    <p>We’re building the ShopOps Shopify App to give you seamless access to your Kanban task board, Token usage, and integrated support—right inside your Shopify admin.</p>
-    <div style="text-align: center; margin-top: 30px;">
-      <img src="https://shopops.app/shopify-app-screenshot.png" alt="ShopOps App UI Preview" style="max-width:100%; border-radius:12px; box-shadow:0 8px 20px rgba(0,0,0,0.1);">
+    <section class="section">
+      <div class="container">
+        <div class="cta-band reveal">
+          <p class="eyebrow">Build a calmer Shopify backend</p>
+          <h2>Bring ShopOps into your operations stack.</h2>
+          <p>Get managed Shopify support today, then scale into apps, automation, and a centralized operating system as your store grows.</p>
+          <div class="hero-actions">
+            <a class="button light" href="/contact/">Get Started</a>
+            <a class="button" href="/apps/">Explore Apps</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div><a class="brand" href="/"><img src="/ShopOpsLogo.png" alt="ShopOps"> <span>ShopOps</span></a><p>White-glove Shopify operations, automation, and apps for growing merchants.</p></div>
+      <div><strong>Apps</strong><a href="/apps/preorders/">PreOrders</a><a href="/apps/showlow/">ShowLow</a><a href="/apps/taskboard/">TaskBoard</a></div>
+      <div><strong>Support</strong><a href="/support/">Support Hub</a><a href="/faq/">FAQ</a><a href="/contact/">Contact</a></div>
+      <div><strong>Company</strong><a href="/privacy/">Privacy</a><a href="/terms/">Terms</a></div>
+      <div><strong>Future</strong><a href="/apps/">Apps</a><a href="/support/">Docs</a><a href="/contact/">Partners</a></div>
     </div>
-  </div>
-
-  <div class="cta-wrapper">
-    <div class="stack-section cta" id="cta">
-      <h2>Try ShopOps Free — Get 2 Tokens Today</h2>
-      <button class="btn" onclick="window.dispatchEvent(new CustomEvent('heyflow-modal-element:open', { detail: { modalId: 'I7__GpbuDm' }}));">Start Now</button>
-      <p style="margin-top: 20px; font-size:0.95rem; color:#555;">Powered by real people. Built for real growth.<br>Your Shopify back office, managed.</p>
-    </div>
-  </div> <!-- end cta-wrapper -->
-
-  <heyflow-modal-element modal-id="I7__GpbuDm">
-    <heyflow-wrapper flow-id="ONczn56DlynlyKpo0YHq" dynamic-height scroll-up-on-navigation style-config='{"width":"800px","borderRadius":"16px"}' modal-id="I7__GpbuDm"></heyflow-wrapper>
-  </heyflow-modal-element>
-
-  <script>
-    const headerEl = document.querySelector('header');
-    const sections = Array.from(document.querySelectorAll('.stack-section'));
-    const elems = [headerEl, ...sections];
-
-    function updateBlur() {
-      elems.forEach((el, idx) => {
-        const next = elems[idx + 1];
-        if (next) {
-          const rect = el.getBoundingClientRect();
-          const nextRect = next.getBoundingClientRect();
-          const overlap = Math.min(Math.max(rect.bottom - nextRect.top, 0), rect.height);
-          const ratio = overlap / rect.height;
-          el.style.filter = `blur(${ratio * 3}px)`;
-          el.style.opacity = `${1 - ratio * 0.9}`;
-        } else {
-          el.style.filter = '';
-          el.style.opacity = '';
-        }
-      });
-    }
-
-    window.addEventListener('scroll', updateBlur);
-    window.addEventListener('resize', updateBlur);
-    document.addEventListener('DOMContentLoaded', updateBlur);
-  </script>
+    <div class="container footer-bottom">© 2026 ShopOps. All rights reserved.</div>
+  </footer>
+  <script src="/script.js"></script>
 </body>
 </html>
