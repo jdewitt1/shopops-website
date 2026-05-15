@@ -412,6 +412,13 @@ img {
   color: #d8d6ce;
 }
 
+.section.dark .price-card h3 {
+  color: var(--white);
+  font-size: 32px;
+  line-height: 40px;
+  margin: 0 0 18px;
+}
+
 .card h3,
 .price-card h3,
 .faq-item h3 {
@@ -439,7 +446,7 @@ img {
   font-weight: 900;
   letter-spacing: 0;
   line-height: 1;
-  margin: 18px 0;
+  margin: 0 0 18px;
 }
 
 .price small {
